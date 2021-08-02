@@ -10,5 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+# Default
+cp -f default-settings package/*/*/default-settings/files/uci.defaults
 # Modify default IP
 sed -i 's/192.168.1.100/192.168.1.1/g' package/base-files/files/bin/config_generate
