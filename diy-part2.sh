@@ -11,6 +11,7 @@
 #
 
 # Default
-cp -f default-settings package/*/*/default-settings/files/uci.defaults
+cp -f default-settings openwrt/package/base-files/files/etc/uci-defaults
+
 # Modify default IP
 sed -i 's/192.168.1.100/192.168.1.1/g' package/base-files/files/bin/config_generate
