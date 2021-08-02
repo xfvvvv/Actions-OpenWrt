@@ -39,7 +39,7 @@ test $version -lt 1 && {
 		uci del system.ntp.server
 		uci add_list system.ntp.server='ntp.ntsc.ac.cn'
 		uci add_list system.ntp.server='ntp.tuna.tsinghua.edu.cn'
-    uci add_list system.ntp.server='time.ustc.edu.cn'
+		uci add_list system.ntp.server='time.ustc.edu.cn'
 		uci set system.@system[0].autoupgrade_pkg='1'
 		uci set system.@system[0].autoupgrade_fm='1'
 		uci commit system
